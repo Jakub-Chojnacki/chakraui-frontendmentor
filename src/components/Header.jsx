@@ -1,4 +1,4 @@
-import { Flex,Image,HStack,Link } from '@chakra-ui/react'
+import { Flex,Image,Link } from '@chakra-ui/react'
 import React,{useContext} from 'react'
 import MainContext from '../context/main-context'
 

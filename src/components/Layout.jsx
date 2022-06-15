@@ -5,10 +5,10 @@ import Sidenav from './Sidenav'
 import MainContext from '../context/main-context'
 
 const Layout = () => {
-  const {showSideNav,setShowSideNav} = useContext(MainContext)
+  const {showSideNav} = useContext(MainContext)
   return (
     <Container maxW={{sm:'100vw', md:'90vw', lg:'80vw'}}>
-        <Header/>
+      <Header/>
       {showSideNav && <Sidenav/>}
     </Container>
   )

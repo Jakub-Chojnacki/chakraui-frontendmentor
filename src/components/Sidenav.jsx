@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import {VStack,Image,Flex,Link} from '@chakra-ui/react'
+import {VStack,Image,Link} from '@chakra-ui/react'
 import MainContext from '../context/main-context'
 const Sidenav = () => {
   const {setShowSideNav} = useContext(MainContext)
