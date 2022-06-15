@@ -7,7 +7,7 @@ const Header = () => {
       <Flex align="center" gap={4}>
         <Image display={{md: 'none'}} src="./images/icons/icon-menu.svg"/>
         <Image src="./images/logo.svg"/>
-        <Flex align="center" display={{sm: 'none', md:'flex'}} gap={6} marginX={10}>
+        <Flex align="center" display={{sm:'none', md:'flex'}} gap={6} marginX={10}>
           <Link variant="nav">Collections</Link>
           <Link variant="nav">Men</Link>
           <Link variant="nav">Women</Link>
@@ -16,9 +16,9 @@ const Header = () => {
         </Flex>
       </Flex>
     
-      <Flex align="center" gap={4}>
-        <Image src="./images/icons/icon-cart.svg"/>
-        <Image src="./images/image-avatar.png"  boxSize='30px'/>
+      <Flex align="center" gap={['2', '4', '8']}>
+        <Image src="./images/icons/icon-cart.svg" boxSize={['15px','20px']}/>
+        <Image src="./images/image-avatar.png"  boxSize={['30px', '35px', '40px']}/>
       </Flex>
     </Flex>
   )

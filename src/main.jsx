@@ -31,6 +31,9 @@ const components = {
         color:'neutral.dark',
         opacity: '0.9',
         fontSize: '16px'
+      },
+      sidenav:{
+        fontWeight:'bold'
       }
     }
   }
