@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Flex borderBottom={{md:'1px'}} borderColor={{md:'neutral.light'}}  py={[2,4,8]}  align="center" justify="space-between">
       <Flex align="center" gap={4}>
-        <Image onClick={()=> setShowSideNav(true)} cursor="pointer" display={{md: 'none'}} src="./images/icons/icon-menu.svg"/>
+        <Image onClick={()=> setShowSideNav(true)} cursor="pointer" display={{md:'none'}} src="./images/icons/icon-menu.svg"/>
         <Image src="./images/logo.svg"/>
         <Flex align="center" display={{sm:'none', md:'flex'}} gap={6} marginX={10}>
           <Link variant="nav">Collections</Link>

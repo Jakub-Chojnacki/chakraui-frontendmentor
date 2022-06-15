@@ -37,7 +37,12 @@ const components = {
         fontWeight:'bold'
       }
     }
-  }
+  },
+  ModalContent: {
+    baseStyle: (props) =>({
+      position: 'static'
+    })
+}
 }
 
 
