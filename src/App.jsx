@@ -1,12 +1,12 @@
 
 import './App.css'
-import { Text } from '@chakra-ui/react'
+import Layout from './components/Layout'
 function App() {
 
 
   return (
     <div className="App">
-        <Text color="primary.orange">This is a simple text</Text>
+        <Layout/>
      </div>
   )
 }

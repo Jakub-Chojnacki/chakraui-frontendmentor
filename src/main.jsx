@@ -14,17 +14,30 @@ const colors = {
     very:'hsl(220, 13%, 13%)',
     dark: 'hsl(219, 9%, 45%)',
     grayish:'hsl(220, 14%, 75%)',
-    light:'hsl(223, 64%, 98%)',
+    light:'hsl(223, 64%, 95%)',
     white: 'hsl(0,0%,100%)',
   }
 }
 
 const fonts = {
-  body: `'Kumbh Sans', sans-serif;`,
+  body: `'Kumbh Sans', sans-serif`,
 
 }
 
-const theme = extendTheme({ colors,fonts })
+const components = {
+  Link: {
+    variants: {
+      nav: {
+        color:'neutral.dark',
+        opacity: '0.9',
+        fontSize: '16px'
+      }
+    }
+  }
+}
+
+
+const theme = extendTheme({ colors,fonts,components })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
