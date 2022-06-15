@@ -3,14 +3,14 @@ import { SimpleGrid,VStack,Flex,Image,Heading,Text,Box,Button} from '@chakra-ui/
 const SingleProduct = () => {
   return (
     //product image(s)
-    <Flex direction={['column','column','row']} align='center' gap={{md:'8'}} marginY={{md:'6'}}>
+    <Flex direction={['column','column','row']} align='center' gap={{md:'12',lg:'16'}} marginY={{md:'6'}}>
         <Flex direction="column" gap={6}>
             <Image borderRadius={{md:'6px'}} src="../images/products/image-product-1.jpg"/>
-            <SimpleGrid columns="4">
-              <Image boxSize='80px' borderRadius={{md:'6px'}} src="../images/products/image-product-1-thumbnail.jpg"/>
-              <Image boxSize='80px' borderRadius={{md:'6px'}} src="../images/products/image-product-2-thumbnail.jpg"/>
-              <Image boxSize='80px' borderRadius={{md:'6px'}} src="../images/products/image-product-3-thumbnail.jpg"/>
-              <Image boxSize='80px' borderRadius={{md:'6px'}} src="../images/products/image-product-4-thumbnail.jpg"/>
+            <SimpleGrid columns="4" spacing={6}>
+              <Image  borderRadius={{md:'6px'}} src="../images/products/image-product-1-thumbnail.jpg"/>
+              <Image  borderRadius={{md:'6px'}} src="../images/products/image-product-2-thumbnail.jpg"/>
+              <Image borderRadius={{md:'6px'}} src="../images/products/image-product-3-thumbnail.jpg"/>
+              <Image  borderRadius={{md:'6px'}} src="../images/products/image-product-4-thumbnail.jpg"/>
             </SimpleGrid>
         </Flex>
         <VStack align='left'>

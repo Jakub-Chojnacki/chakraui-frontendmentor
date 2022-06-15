@@ -7,7 +7,7 @@ import SingleProduct from './products/SingleProduct'
 const Layout = () => {
   const {showSideNav} = useContext(MainContext)
   return (
-    <Container maxW={{sm:'100vw', md:'90vw'}} pBottom={6}>
+    <Container maxW={{sm:'100vw', md:'90vw', lg:'80vw', xl:'70vw'}} pBottom={6}>
       <Header/>
       {showSideNav && <Sidenav/>}
       <SingleProduct/>
