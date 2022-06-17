@@ -25,9 +25,9 @@ const ProductTabs = ({images,thumbnails}) => {
     const panels = images.map((panel)=> {
       return (
          <TabPanel>
-            <Image onClick={handlePrevious} p={4} background="white"  borderRadius="50%" position="absolute" left="25" top="50%" src="../images/icons/icon-previous.svg"/>
-            <Image  onClick={handleNext} p={4} background="white"  borderRadius="50%"  right="25" top="50%" position="absolute" src="../images/icons/icon-next.svg"/>
-            <Image borderRadius={{md:'6px'}} src={panel}/>
+            <Image  display={{md:'none'}} onClick={handlePrevious} p={4} background="white"  borderRadius="50%" position="absolute" left="25" top="50%" src="../images/icons/icon-previous.svg"/>
+               <Image   borderRadius={{md:'6px'}} src={panel}/>
+            <Image  display={{md:'none'}} onClick={handleNext} p={4} background="white"  borderRadius="50%"  right="25" top="50%" position="absolute" src="../images/icons/icon-next.svg"/>
          </TabPanel>
          )
     })
