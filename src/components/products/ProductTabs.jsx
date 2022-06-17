@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs, TabList, TabPanels, Tab, TabPanel,Flex,Image } from '@chakra-ui/react'
+import { Tabs, TabList, TabPanels, Tab, TabPanel,Flex,Image,Box } from '@chakra-ui/react'
 const ProductTabs = ({images,thumbnails}) => {
    const [tabIndex, setTabIndex] = React.useState(0)
    const handleTabsChange = (index) => {
@@ -32,17 +32,19 @@ const ProductTabs = ({images,thumbnails}) => {
          )
     })
 
-    const tabs = thumbnails.map((tab)=> {
+    const tabs = thumbnails.map((tab,index)=> {
       return (
          <Tab>
-            <Image  borderRadius={{md:'6px'}} src={tab}/>
+            <Box border={index === tabIndex ? '2px' : "0"} borderColor="primary.orange" borderRadius={{md:'10px'}}> 
+             <Image opacity={index === tabIndex ? '35%' : "100%"} borderRadius={{md:'10px'}} src={tab}/>
+            </Box>
          </Tab>
       )
     })
 
   return (
     <Flex direction="column" gap={6} >
-     <Tabs index={tabIndex} onChange={handleTabsChange}>
+     <Tabs variant='unstyled' index={tabIndex} onChange={handleTabsChange}>
       <TabPanels position="relative">
        {panels}
       </TabPanels>
