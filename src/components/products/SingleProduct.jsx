@@ -5,7 +5,7 @@ const SingleProduct = () => {
   return (
     //product image(s)
     <Flex direction={['column','column','row']} align='center' gap={{md:'12',lg:'16'}} marginY={{md:'6'}}>
-      <ProductTabs/>
+      <ProductTabs images={['../images/products/image-product-1.jpg','../images/products/image-product-2.jpg','../images/products/image-product-3.jpg','../images/products/image-product-4.jpg']} thumbnails={['../images/products/image-product-1-thumbnail.jpg','../images/products/image-product-2-thumbnail.jpg','../images/products/image-product-3-thumbnail.jpg','../images/products/image-product-4-thumbnail.jpg']}/>
         <VStack  marginBottom={'6'} marginTop={['6','6','0']} align='left'>
            <Heading color='primary.orange' textTransform='uppercase' size='sm'>Sneaker Company</Heading>
            <Heading>Fall Limited Edition Sneakers</Heading>
