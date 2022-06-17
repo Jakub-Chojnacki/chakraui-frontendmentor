@@ -1,18 +1,11 @@
 import React from 'react'
 import { SimpleGrid,VStack,Flex,Image,Heading,Text,Box,Button} from '@chakra-ui/react'
+import ProductTabs from './ProductTabs'
 const SingleProduct = () => {
   return (
     //product image(s)
     <Flex direction={['column','column','row']} align='center' gap={{md:'12',lg:'16'}} marginY={{md:'6'}}>
-        <Flex direction="column" gap={6}>
-            <Image  borderRadius={{md:'6px'}} src="../images/products/image-product-1.jpg"/>
-            <SimpleGrid  columns="4" spacing={6} display={['none','none','grid']}>
-              <Image  borderRadius={{md:'6px'}} src="../images/products/image-product-1-thumbnail.jpg"/>
-              <Image  borderRadius={{md:'6px'}} src="../images/products/image-product-2-thumbnail.jpg"/>
-              <Image borderRadius={{md:'6px'}} src="../images/products/image-product-3-thumbnail.jpg"/>
-              <Image  borderRadius={{md:'6px'}} src="../images/products/image-product-4-thumbnail.jpg"/>
-            </SimpleGrid>
-        </Flex>
+      <ProductTabs/>
         <VStack  marginBottom={'6'} marginTop={['6','6','0']} align='left'>
            <Heading color='primary.orange' textTransform='uppercase' size='sm'>Sneaker Company</Heading>
            <Heading>Fall Limited Edition Sneakers</Heading>

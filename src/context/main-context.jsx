@@ -2,7 +2,7 @@ import {createContext,useState} from 'react'
 const MainContext = createContext();
 
 export function MainProvider({children}){
-    const [showSideNav,setShowSideNav] = useState(true)
+    const [showSideNav,setShowSideNav] = useState(false)
 
     return (
         <MainContext.Provider
