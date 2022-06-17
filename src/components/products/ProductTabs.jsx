@@ -35,7 +35,7 @@ const ProductTabs = ({images,thumbnails}) => {
     const tabs = thumbnails.map((tab,index)=> {
       return (
          <Tab>
-            <Box border={index === tabIndex ? '2px' : "0"} borderColor="primary.orange" borderRadius={{md:'10px'}}> 
+            <Box border="2px" borderColor={index === tabIndex ? "primary.orange":"transparent"} borderRadius={{md:'10px'}}>  // transparent border fixed the issues where tab images would move on change
              <Image opacity={index === tabIndex ? '35%' : "100%"} borderRadius={{md:'10px'}} src={tab}/>
             </Box>
          </Tab>
