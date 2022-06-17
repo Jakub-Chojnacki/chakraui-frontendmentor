@@ -1,3 +1,4 @@
+import React from 'react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel,Flex,Image } from '@chakra-ui/react'
 const ProductTabs = ({images,thumbnails}) => {
    const [tabIndex, setTabIndex] = React.useState(0)
